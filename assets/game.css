@@ -3,6 +3,21 @@
     margin-bottom: 0.5rem;
     width: 100%;
     font-size: 1.8rem;
-    border: 0.1rem solid rgb(189, 147, 189);
-    background: rgb(189, 147, 189);
+    border: 0.1rem solid #f05365;
+    background: white;
+}
+
+.choice-container:hover {
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(240, 83, 101, 0.5);
+    transform: translateY(-0.1rem);
+    transition: transform 150ms;
+}
+
+.choice-prefix{
+    padding: 1.5rem 2.5rem;
+    background-color: #f05365;
+}
+
+.choice-text {
+    padding: 1.5rem;
 }
