@@ -47,7 +47,7 @@ let questions = [
 
 // points per correct question + how many questions does the user get
 const CORRECT_BONUS = 10;
-const MAX_QUESTIONS = 3;
+const MAX_QUESTIONS = 4;
 
 //start game funciton
 startGame = () => {
@@ -99,7 +99,6 @@ choices.forEach(choice => {
         if (classToApply === "correct") {
             incrementScore(CORRECT_BONUS);
         }
-
 
         selectedChoice.parentElement.classList.add(classToApply);
 
