@@ -127,3 +127,20 @@ input::placeholder{
     color: #f05365;
     text-align: center;
 }
+
+/* ---footer ---credit to love running */
+
+footer {
+    height: 150px;
+}
+
+
+#footer-text {
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+#footer-text a {
+    color: inherit;
+    text-decoration: none;
+}
