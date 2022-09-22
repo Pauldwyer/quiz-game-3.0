@@ -1,6 +1,7 @@
 const question = document.getElementById('question');
 const choices = Array.from(document.getElementsByClassName("choice-text"));
-const questionCounterText = document.getElementById('questionCounter');
+//for targetting the hud
+const questionCounterText = document.getElementById('question-counter');
 const scoreText = document.getElementById('score');
 
 let currentQuestions = {};
@@ -64,6 +65,7 @@ getNewQuestion = () => {
     }
 // increments to 1
     questionCounter++;
+    questionCounterText.innerText = `${questionCounter}/${MAX_QUESTIONS}`;
     //random number generator
     const questionIndex = Math.floor(Math.random() * availableQuestions.length);
     currentQuestion = availableQuestions[questionIndex];
