@@ -3,7 +3,7 @@ const choices = Array.from(document.getElementsByClassName("choice-text"));
 console.log(choices);
 
 let currentQuestions = {};
-let acceptingAnswers = true;
+let acceptingAnswers = false;
 let score = 0;
 let questionCounter = 0;
 let availableQuestions = [];
@@ -47,6 +47,7 @@ let questions = [
 const CORRECT_BONUS = 10;
 const MAX_QUESTIONS = 3;
 
+//start game funciton
 startGame = () => {
     questionCounter = 0;
     score = 0;
@@ -56,6 +57,11 @@ startGame = () => {
 }
 
 getNewQuestion = () => {
+
+    if(availableQuestions.length === 0 || questionCounter > MAX_QUESTIONS) {
+        //go to end page if no questions left
+        return window.location.assign("/end.html");
+    }
 // increments to 1
     questionCounter++;
     //random number generator
@@ -67,7 +73,25 @@ getNewQuestion = () => {
     choices.forEach( choice => {
         const number = choice.dataset['number'];
         choice.innerText = currentQuestion['choice' + number];
-    })
-}
+    });
 
+    //splices question just used from the array
+    availableQuestions.splice(questionIndex, 1);
+
+    acceptingAnswers = true;
+};
+
+choices.forEach(choice => {
+    choice.addEventListener('click', e => {
+        if (!acceptingAnswers) return;
+
+        acceptingAnswers = false;
+        const selectedChoice = e.target;
+        const selectedAnswer = selectedChoice.dataset["number"];
+
+        getNewQuestion();
+    })
+})
+
+//calls the start game funciton
 startGame()
