@@ -57,6 +57,7 @@ startGame = () => {
     getNewQuestion();
 }
 
+// get new question function
 getNewQuestion = () => {
 
     if(availableQuestions.length === 0 || questionCounter > MAX_QUESTIONS) {
@@ -64,7 +65,7 @@ getNewQuestion = () => {
         //go to end page if no questions left
         return window.location.assign("end.html");
     }
-// increments to 1
+
     questionCounter++;
     //populates the hud with a question couter
     questionCounterText.innerText = `${questionCounter}/${MAX_QUESTIONS}`;
