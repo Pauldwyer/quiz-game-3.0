@@ -96,6 +96,11 @@ choices.forEach(choice => {
         //gives choices a class based on correct or incorrect
         const classToApply = selectedAnswer == currentQuestion.answer ? "correct" : "incorrect";
         
+        if (classToApply === "correct") {
+            incrementScore(CORRECT_BONUS);
+        }
+
+
         selectedChoice.parentElement.classList.add(classToApply);
 
         //removes the highlight after 1000ms or 1second
