@@ -90,3 +90,15 @@ h3{
     color: #f05365;
     background-color: white;
 }
+
+.btn:hover {
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(240, 83, 101, 0.5);
+    transform: translateY(-0.1rem);
+    transition: transform 150ms;
+}
+
+.btn[disabled]:hover {
+    cursor: not-allowed;
+    box-shadow: none;
+    transform: none;
+}
