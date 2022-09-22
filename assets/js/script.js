@@ -52,7 +52,6 @@ startGame = () => {
     questionCounter = 0;
     score = 0;
     availableQuestions = [...questions];
-    console.log(availableQuestions);
     getNewQuestion();
 }
 
@@ -81,6 +80,7 @@ getNewQuestion = () => {
     acceptingAnswers = true;
 };
 
+//gives a delay, allows selecting answer and gets new question
 choices.forEach(choice => {
     choice.addEventListener('click', e => {
         if (!acceptingAnswers) return;
