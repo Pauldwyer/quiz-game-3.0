@@ -89,16 +89,17 @@ choices.forEach(choice => {
         const selectedChoice = e.target;
         const selectedAnswer = selectedChoice.dataset["number"];
 
+        //gives choices a class based on correct or incorrect
         const classToApply = selectedAnswer == currentQuestion.answer ? "correct" : "incorrect";
         
         selectedChoice.parentElement.classList.add(classToApply);
 
+        //removes the highlight after 1000ms or 1second
         setTimeout(() => {
             selectedChoice.parentElement.classList.remove(classToApply);
             getNewQuestion();
         }, 1000);
 
-        //getNewQuestion();
     })
 })
 
