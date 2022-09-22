@@ -63,7 +63,11 @@ getNewQuestion = () => {
     currentQuestion = availableQuestions[questionIndex];
     question.innerText = currentQuestion.question;
 
-
+    //iterates through each choice, grabs choice based on data numer and populates text with answer
+    choices.forEach( choice => {
+        const number = choice.dataset['number'];
+        choice.innerText = currentQuestion['choice' + number];
+    })
 }
 
 startGame()
