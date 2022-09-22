@@ -65,8 +65,9 @@ getNewQuestion = () => {
     }
 // increments to 1
     questionCounter++;
+    //populates the hud with a question couter
     questionCounterText.innerText = `${questionCounter}/${MAX_QUESTIONS}`;
-    //random number generator
+    
     const questionIndex = Math.floor(Math.random() * availableQuestions.length);
     currentQuestion = availableQuestions[questionIndex];
     question.innerText = currentQuestion.question;
