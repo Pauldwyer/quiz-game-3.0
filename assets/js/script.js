@@ -67,7 +67,7 @@ getNewQuestion = () => {
     questionCounter++;
     //populates the hud with a question couter
     questionCounterText.innerText = `${questionCounter}/${MAX_QUESTIONS}`;
-    
+
     const questionIndex = Math.floor(Math.random() * availableQuestions.length);
     currentQuestion = availableQuestions[questionIndex];
     question.innerText = currentQuestion.question;
@@ -106,6 +106,12 @@ choices.forEach(choice => {
 
     })
 })
+
+//increments the score updates the hud
+incrementScore = num => {
+    score +=num;
+    scoreText.innerText = score;
+}
 
 //calls the start game funciton
 startGame()
