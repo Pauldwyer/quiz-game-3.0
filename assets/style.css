@@ -125,4 +125,5 @@ input {
 
 input::placeholder{
     color: #f05365;
+    text-align: center;
 }
