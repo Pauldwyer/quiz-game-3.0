@@ -42,3 +42,7 @@ let questions = [
         answer: 1,
     }
 ]
+
+// points per correct question + how many questions does the user get
+const CORRECT_BONUS = 10;
+const MAX_QUESTIONS = 3;
