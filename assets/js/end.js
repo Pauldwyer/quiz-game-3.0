@@ -4,6 +4,8 @@ const finalScore = document.getElementById("finalScore");
 const mostRecentScore = localStorage.getItem("mostRecentScore");
 
 const highScores = JSON.parse(localStorage.getItem("highScores")) || [];
+//sets the max amount of highscores to 5
+const MAX_HIGH_SCORES = 5;
 finalScore.innerText = mostRecentScore;
 
 //enables the save button if username has a value
@@ -19,6 +21,15 @@ saveHighScore = e => {
         score: mostRecentScore,
         name: username.value
     };
+    //adds highscores to array
     highScores.push(score);
-    console.log(highScores);
+    //sorts the highscores
+    highScores.sort( (a,b) => b.score - a.score)
+
+    //cuts off after 5th highscore
+    highScores.splice(5);
+    //updates local storage with highscores an stringifys the highscore
+    localStorage.setItem('highScores', JSON.stringify(highScores));
+    //goes back home
+    window.location.assign("/");
 }
