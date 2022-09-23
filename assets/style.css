@@ -1,6 +1,7 @@
 /* main body style rules */
 :root {
-    background-color: #f2edeb;
+    background: rgb(166,83,245);
+    background: radial-gradient(circle, rgba(166,83,245,1) 0%, rgba(143,140,242,1) 35%, rgba(101,184,191,1) 100%);
     /* 10px makes a reference for rems */
     font-size: 62.5%;
 }
@@ -17,7 +18,7 @@
 
 h1{
     font-size: 5.4rem;
-    color: #f05365;
+    color: #2A2356;
     margin-bottom: 5rem;
 }
 
@@ -85,10 +86,10 @@ h3{
     padding: 1rem 0;
     width: 20rem;
     text-align: center;
-    border: 0.1rem solid #f05365;
+    border: 0.1rem solid #2A2356;
     margin-bottom: 1rem;
     text-decoration: none;
-    color: #f05365;
+    color: #2A2356;
     background-color: white;
 }
 
@@ -124,7 +125,7 @@ input {
 }
 
 input::placeholder{
-    color: #f05365;
+    color: #2A2356;
     text-align: center;
 }
 
