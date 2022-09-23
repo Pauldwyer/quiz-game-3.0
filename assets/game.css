@@ -3,19 +3,19 @@
     margin-bottom: 0.5rem;
     width: 100%;
     font-size: 1.8rem;
-    border: 0.1rem solid #f05365;
+    border: 0.1rem solid rgba(250, 146, 251,);
     background: white;
 }
 
 .choice-container:hover {
-    box-shadow: 0 0.4rem 1.4rem 0 rgba(240, 83, 101, 0.5);
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(250, 146, 251,);
     transform: translateY(-0.1rem);
     transition: transform 150ms;
 }
 
 .choice-prefix{
     padding: 1.5rem 2.5rem;
-    background-color: #f05365;
+    background-color: #a653f5;
 }
 
 .choice-text {
@@ -24,7 +24,7 @@
 }
 
 .correct {
-    background-color: #28a745;
+    background-color: #65b8bf;
 }
 
 .incorrect {
