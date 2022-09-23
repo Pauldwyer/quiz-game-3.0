@@ -12,7 +12,7 @@ let availableQuestions = [];
 
 let questions = [
     {
-        question: 'What movie theme song does Dustin sing to Suzie at the end of season 3',
+        question: 'What movie theme song does Dustin sing to Suzie at the end of season 3?',
         choice1: 'Never-ending story',
         choice2: 'Die hard',
         choice3: 'Top Gun',
@@ -28,7 +28,7 @@ let questions = [
         answer: 4,
     },
     {
-        question: 'Which character is played by Millie Bobby Brown',
+        question: 'Which character is played by Millie Bobby Brown?',
         choice1: 'Eleven',
         choice2: 'Robin',
         choice3: 'Max',
@@ -36,7 +36,7 @@ let questions = [
         answer: 1,
     },
     {
-        question: 'What is the name of the ice cream parlor where Steve and Robin work in season 3',
+        question: 'What is the name of the ice cream parlor where Steve and Robin work in season 3?',
         choice1: 'the Hawthorne Grille',
         choice2: 'Lickity Splits',
         choice3: 'The Rovers Return',
