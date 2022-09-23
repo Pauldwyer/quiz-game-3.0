@@ -31,5 +31,5 @@ saveHighScore = e => {
     //updates local storage with highscores an stringifys the highscore
     localStorage.setItem('highScores', JSON.stringify(highScores));
     //goes back home
-    window.location.assign("/");
+    window.location.assign("index.html");
 }
