@@ -1,3 +1,4 @@
+/* multiple choice containers */
 .choice-container {
     display: flex;
     margin-bottom: 0.5rem;
@@ -7,6 +8,7 @@
     background: #e0d9f6;
 }
 
+/* hover effect for the choice containers */
 .choice-container:hover {
     box-shadow: 0 0.4rem 1.4rem 0 rgba(250, 146, 251, 0.5);
     transform: translateY(-0.1rem);
@@ -18,11 +20,13 @@
     background-color: #a653f5;
 }
 
+/* text inside the choice containers */
 .choice-text {
     padding: 1.5rem;
     width: 100%;
 }
 
+/* for JS to apply the class to correct and incorrect answers */
 .correct {
     background-color: #65b8bf;
 }
