@@ -42,12 +42,9 @@ h3 {
 /* container style rules */
 
 .container {
-    /*width: 100vw;
-    height: 100vw;*/
     display: flex;
     justify-content: center;
     align-items: center;
-    /* responsiveness */
     max-width: 80rem;
     margin: 0 auto;
     padding: 2rem;
