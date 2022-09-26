@@ -1,11 +1,10 @@
 const question = document.getElementById('question');
 const choices = Array.from(document.getElementsByClassName("choice-text"));
-//for targetting the hud
 const questionCounterText = document.getElementById('question-counter');
 const scoreText = document.getElementById('score');
 
 // declaring variables
-let currentQuestions = {};
+let currentQuestion = {};
 let acceptingAnswers = false;
 let score = 0;
 let questionCounter = 0;
@@ -57,7 +56,7 @@ startGame = () => {
     score = 0;
     availableQuestions = [...questions];
     getNewQuestion();
-}
+};
 
 // get new question function
 getNewQuestion = () => {
@@ -66,17 +65,17 @@ getNewQuestion = () => {
         localStorage.setItem('mostRecentScore', score);
         //go to end page if no questions left
         return window.location.assign("end.html");
-    }
+    };
 
-    questionCounter++;
     //populates the hud with a question couter
+    questionCounter++;
     questionCounterText.innerText = `${questionCounter}/${MAX_QUESTIONS}`;
 
     const questionIndex = Math.floor(Math.random() * availableQuestions.length);
     currentQuestion = availableQuestions[questionIndex];
     question.innerText = currentQuestion.question;
 
-    //iterates through each choice, grabs choice based on data numer and populates text with answer
+    //iterates through each choice, grabs choice based on data number and populates text with answer
     choices.forEach( choice => {
         const number = choice.dataset['number'];
         choice.innerText = currentQuestion['choice' + number];
@@ -106,20 +105,20 @@ choices.forEach(choice => {
 
         selectedChoice.parentElement.classList.add(classToApply);
 
-        //removes the highlight after 1000ms or 1second
+        //removes the highlight after 1000ms or 1second, gets new question
         setTimeout(() => {
             selectedChoice.parentElement.classList.remove(classToApply);
             getNewQuestion();
         }, 1000);
 
-    })
-})
+    });
+});
 
 //increments the score updates the hud
 incrementScore = num => {
     score +=num;
     scoreText.innerText = score;
-}
+};
 
 //calls the start game funciton
-startGame()
+startGame();
