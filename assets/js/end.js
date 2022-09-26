@@ -6,6 +6,7 @@ const mostRecentScore = localStorage.getItem("mostRecentScore");
 const highScores = JSON.parse(localStorage.getItem("highScores")) || [];
 //sets the max amount of highscores to 5
 const MAX_HIGH_SCORES = 5;
+//sets populates the heading in end.html with the final score
 finalScore.innerText = mostRecentScore;
 
 //enables the save button if username has a value
