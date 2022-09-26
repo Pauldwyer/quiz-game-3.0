@@ -53,8 +53,14 @@
   - Willing to accept the empty heading warning as this heading will be populated as part of the getNewQuestion() Function.
   - Game.html showing 1 error. As pointed out above, willing to accept this error. [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fpauldwyer.github.io%2Fquiz-game-3.0%2Fgame.html)
   - End.html showing 1 error. Willing to accept this error as the blank space is populated by the end.js file. [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fpauldwyer.github.io%2Fquiz-game-3.0%2Fend.html)
-  - highscores.html no errors were returned when passing through the official [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fpauldwyer.github.io%2Fquiz-game-3.0%2Fhighscores.html)
+  - Highscores.html no errors were returned when passing through the official [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fpauldwyer.github.io%2Fquiz-game-3.0%2Fhighscores.html)
 
+- CSS
+  - Style.css no errors were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fpauldwyer.github.io%2Fquiz-game-3.0%2Findex.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
+  - Highscores.css no errors were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fpauldwyer.github.io%2Fquiz-game-3.0%2Fhighscores.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
+  - 1 Error found in game.css
+  - ![Game.css Jigsaw validator error](assets/images/game.css-validator-error.png)
+  - Game.css error has been fixed and no errors were found when passing through the official [(Jigsaw) validator]()
 
 
 ### Unfixed Bugs
