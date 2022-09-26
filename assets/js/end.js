@@ -12,10 +12,9 @@ finalScore.innerText = mostRecentScore;
 //enables the save button if username has a value
 username.addEventListener('keyup', () => {
     saveScoreBtn.disabled = !username.value;
-})
+});
 
 saveHighScore = e => {
-    console.log("clicked the save button!")
     e.preventDefault();
 
     const score = {
@@ -25,7 +24,7 @@ saveHighScore = e => {
     //adds highscores to array
     highScores.push(score);
     //sorts the highscores
-    highScores.sort( (a,b) => b.score - a.score)
+    highScores.sort( (a,b) => b.score - a.score);
 
     //cuts off after 5th highscore
     highScores.splice(5);
@@ -33,4 +32,4 @@ saveHighScore = e => {
     localStorage.setItem('highScores', JSON.stringify(highScores));
     //goes back home
     window.location.assign("index.html");
-}
+};
