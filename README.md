@@ -27,6 +27,9 @@
 
   - [CSS](https://www.w3schools.com/css/css_intro.asp)
 
+  
+  - [JavaScript](https://www.w3schools.com/js/)
+
 
   - [GitPod](https://gitpod.io/)
 
@@ -75,12 +78,19 @@
 
 ## Deployment
 
+- The site was deployed to GitHub pages. The steps to deploy are as follows: 
+  - In the GitHub repository, navigate to the Settings tab 
+  - In settings click the Pages link in the left side bar
+  - From the source section drop-down menu, select the Master Branch
+  - Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment. 
+
+The live link can be found here - https://pauldwyer.github.io/quiz-game-pp2/
 
 ## Credits 
 
-[w3schools](https://www.w3schools.com/html/default.asp) code for the tutorials page and timetable was taken from w3schools.
+[w3schools](https://www.w3schools.com/html/default.asp)
 
-[Flexbox Frogy](https://flexboxfroggy.com/) this game thought me how to use flex box.
+[Flexbox Frogy](https://flexboxfroggy.com/) This game thought me how to use flex box.
 
 ### Content 
 
