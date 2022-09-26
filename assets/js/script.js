@@ -11,8 +11,7 @@ let questionCounter = 0;
 let availableQuestions = [];
 
 // declares 4 questions in an array
-let questions = [
-    {
+let questions = [{
         question: 'What movie theme song does Dustin sing to Suzie at the end of season 3?',
         choice1: 'Never-ending story',
         choice2: 'Die hard',
@@ -61,7 +60,7 @@ startGame = () => {
 // get new question function
 getNewQuestion = () => {
 
-    if(availableQuestions.length === 0 || questionCounter > MAX_QUESTIONS) {
+    if (availableQuestions.length === 0 || questionCounter > MAX_QUESTIONS) {
         localStorage.setItem('mostRecentScore', score);
         //go to end page if no questions left
         return window.location.assign("end.html");
@@ -76,7 +75,7 @@ getNewQuestion = () => {
     question.innerText = currentQuestion.question;
 
     //iterates through each choice, grabs choice based on data number and populates text with answer
-    choices.forEach( choice => {
+    choices.forEach(choice => {
         const number = choice.dataset['number'];
         choice.innerText = currentQuestion['choice' + number];
     });
@@ -98,7 +97,7 @@ choices.forEach(choice => {
 
         //gives choices a class based on correct or incorrect
         const classToApply = selectedAnswer == currentQuestion.answer ? "correct" : "incorrect";
-        
+
         if (classToApply === "correct") {
             incrementScore(CORRECT_BONUS);
         }
@@ -116,7 +115,7 @@ choices.forEach(choice => {
 
 //increments the score updates the hud
 incrementScore = num => {
-    score +=num;
+    score += num;
     scoreText.innerText = score;
 };
 

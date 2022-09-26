@@ -24,7 +24,7 @@ saveHighScore = e => {
     //adds highscores to array
     highScores.push(score);
     //sorts the highscores
-    highScores.sort( (a,b) => b.score - a.score);
+    highScores.sort((a, b) => b.score - a.score);
 
     //cuts off after 5th highscore
     highScores.splice(5);
