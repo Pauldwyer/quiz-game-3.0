@@ -63,12 +63,12 @@
   - Game.css error has been fixed and no errors were found when passing through the official [(Jigsaw) validator]()
 
 - JavaScript
-  - ![Script.js warnings](assets/images/script.js-warnings.png)
   - Accepting these warnings. No erors shown.
-  - ![High-scores.js warnings](assets/images/high-scores.js-jshint.png)
+    ![Script.js warnings](assets/images/script.js-warnings.png)
   - Accepting these warnings. No errors shown.
-  - ![End.js shint warnings](assets/images/end.js-jshint-warnings.png)
+    ![High-scores.js warnings](assets/images/high-scores.js-jshint.png)
   - Accepting these warnings. One unused variable sets the max number of highscores to five. One undefined variable adds the score to the an array, sorts the array and splices out the lowest and keeps the array at a length of five. No errors shown.
+    ![End.js shint warnings](assets/images/end.js-jshint-warnings.png)
 
 
 ### Unfixed Bugs
