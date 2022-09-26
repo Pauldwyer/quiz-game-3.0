@@ -47,6 +47,10 @@
 
 ### Validator Testing 
 
+- Index.html no errors were returned when passing through the official [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fpauldwyer.github.io%2Fquiz-game-3.0%2Findex.html)
+- Game.html showed 2 warnings and 1 error.
+![w3c-validator warning/errors](assets/images/w3-validator-errors-game.html.png)
+
 ### Unfixed Bugs
 
 ## Deployment
@@ -62,3 +66,4 @@
 
 
 ### Media
+
