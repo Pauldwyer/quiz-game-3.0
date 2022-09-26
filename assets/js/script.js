@@ -4,12 +4,14 @@ const choices = Array.from(document.getElementsByClassName("choice-text"));
 const questionCounterText = document.getElementById('question-counter');
 const scoreText = document.getElementById('score');
 
+// declaring variables
 let currentQuestions = {};
 let acceptingAnswers = false;
 let score = 0;
 let questionCounter = 0;
 let availableQuestions = [];
 
+// declares 4 questions in an array
 let questions = [
     {
         question: 'What movie theme song does Dustin sing to Suzie at the end of season 3?',
