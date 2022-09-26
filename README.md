@@ -2,14 +2,14 @@
 
 Quiz Game is a Stranger Things Quiz that is aimed at viewers of the hit tv series "Stranger Things". 
 
-It is meant as abit of light hearted fun and to test people on their Stranger Things knowledge.
+It is meant as a bit of light-hearted fun and to test people on their Stranger Things knowledge.
 
-There is a high scores leader board so users can compare their own high scores.
+There is a high scores leader board so users can compare their high scores.
 
 
 ## UX 
 
-The scope of this project was to build an interactive front-end site. The site should respond to the users' actions, allowing users to actively engage with data, alter the way the site displays the information to achieve their preferred goals.
+The scope of this project was to build an interactive front-end site. The site should respond to the users' actions, allowing users to actively engage with data, and alter the way the site displays the information to achieve their preferred goals.
 Required technologies: HTML, CSS, JavaScript.
 
 ### Project Goals
@@ -19,33 +19,33 @@ Required technologies: HTML, CSS, JavaScript.
 
 ## Features 
 
-In this section I will show and discuss all the features of the site.
+In this section, I will show and discuss all the features of the site.
 
 ### Existing Features
 
-- Home is the first page you see when you open the site. It clearly states the name of the quiz, has one button for Play and one button for Highscores.
+- Home is the first page you see when you open the site. It clearly states the name of the quiz and has one button for Play and one button for Highscores.
     - The play button initiates the start of the quiz.
-    - The highscores button brings you to a different page that has the list of high scores.
-    - The footer which clearly states the site is built for academic purposes and has a link to the developers GitHub.
+    - The high scores button brings you to a different page that has the list of high scores.
+    - The footer clearly states the site is built for academic purposes and has a link to the developers' GitHub.
 
 ![Home Page](assets/images/home-page-features.png)
 
 - Game page. The game starts when you click the play button. You are brought to a different page that has multiple choice questions.
   - There is a question counter in the top left corner to show which question the user is on.
-  - There is a score counter in the top right corner that increments by 10 points everytime the user gets a question correct.
+  - There is a score counter in the top right corner that increments by 10 points every time the user gets a question correct.
   - The question is displayed.
   - Four multiple choice answers are provided.
-  - When you hover over a answer there is a hover effect on mouse over.
+  - When you hover over an answer there is a hover effect on mouseover.
   - If you select correct or incorrect answers the buttons will highlight with a different colour respectively.
 
 
 ![Game Page](assets/images/game-page-features.png)
 ![Game Page Capture](assets/images/game-page-capture.gif)
 
-- End page is displayed when all four questions have been answered. This page has total score at the top, four buttons and a footer.
+- End page is displayed when all four questions have been answered. This page has a total score at the top, four buttons and a footer.
   - Total score at the top of the screen shows what score the user received.
-  - Username button allows the user to input a username to show on the high scores list
-  - Save button is only available when the user has inputted a username. This allows the user the save their username on the highscore list.
+  - The username button allows the user to input a username to show on the high scores list
+  - Save button is only available when the user has inputted a username. This allows the user the save their username on the high score list.
   - Play again button allows the user to play the game again.
   - Go home button allows the user to return to the home page.
 
@@ -106,15 +106,15 @@ In this section I will show and discuss all the features of the site.
   - Game.css error has been fixed and no errors were found when passing through the official [(Jigsaw) validator]()
 
 - JavaScript
-  - Accepting these warnings. No erors shown.
+  - Accepting these warnings. No errors were shown.
 
     ![Script.js warnings](assets/images/script.js-warnings.png)
 
-  - Accepting these warnings. No errors shown.
+  - Accepting these warnings. No errors were shown.
 
     ![High-scores.js warnings](assets/images/high-scores.js-jshint.png)
 
-  - Accepting these warnings. One unused variable sets the max number of highscores to five. One undefined variable adds the score to the an array, sorts the array and splices out the lowest and keeps the array at a length of five. No errors shown.
+  - Accepting these warnings. One unused variable sets the max number of high scores to five. One undefined variable adds the score to an array, sorts the array and splices out the lowest and keeps the array at a length of five. No errors were shown.
 
     ![End.js shint warnings](assets/images/end.js-jshint-warnings.png)
 
@@ -125,7 +125,7 @@ In this section I will show and discuss all the features of the site.
 
 - The site was deployed to GitHub pages. The steps to deploy are as follows: 
   - In the GitHub repository, navigate to the Settings tab 
-  - In settings click the Pages link in the left side bar
+  - In settings click the Pages link on the left sidebar
   - From the source section drop-down menu, select the Master Branch
   - Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment. 
 
@@ -135,10 +135,9 @@ The live link can be found here - https://pauldwyer.github.io/quiz-game-pp2/
 
 [w3schools](https://www.w3schools.com/html/default.asp)
 
-[Flexbox Frogy](https://flexboxfroggy.com/) This game thought me how to use flex box.
+[Flexbox Frogy](https://flexboxfroggy.com/) This game thought me how to use flexbox.
 
 ### Content 
 
 
 ### Media
-
