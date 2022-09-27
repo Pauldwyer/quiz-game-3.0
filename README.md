@@ -204,6 +204,16 @@ The live link can be found here - https://pauldwyer.github.io/quiz-game-pp2/
 
 [Flexbox Frogy](https://flexboxfroggy.com/)
 
+[Fonts Inspiration](https://github.com/torch2424/aesthetic-css)
+
+[Web Dev Simplified Youtube](https://www.youtube.com/watch?v=riDzcEQbX6k&t=458s)
+
+[Brian Design Youtube](https://www.youtube.com/watch?v=f4fB9Xg2JEY&t=2614s)
+
+[James Q Quick](https://www.youtube.com/watch?v=rFWbAj40JrQ&list=PLB6wlEeCDJ5Yyh6P2N6Q_9JijB6v4UejF)
+
+[Stackoverflow](https://stackoverflow.com/)
+
 ### Content 
 
 
