@@ -9,13 +9,14 @@ There is a high scores leader board so users can compare their high scores.
 
 ## UX 
 
+### Project Goals
+
 The scope of this project was to build an interactive front-end site. The site should respond to the users' actions, allowing users to actively engage with data, and alter the way the site displays the information to achieve their preferred goals.
 Required technologies: HTML, CSS, JavaScript.
 
-### Project Goals
-
-
 ### User Stories
+
+
 
 ## Features 
 
@@ -58,8 +59,11 @@ In this section, I will show and discuss all the features of the site.
 
 ### Future Features
 
+- Add more questions / have the quiz take questions from an api.
 
+- Add sounds / play some synthwave music in the background.
 
+- Add supporting images.
 
 ## Technology Used
 
@@ -92,7 +96,11 @@ In this section, I will show and discuss all the features of the site.
 ### Validator Testing 
 - HTML
   - Index.html no errors were returned when passing through the official [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fpauldwyer.github.io%2Fquiz-game-pp2%2F)
-  - Game.html showed 2 warnings and 1 error.![w3c-validator warning/errors](assets/images/w3c-validator-error-game.html.png)
+
+  - Game.html showed 2 warnings and 1 error.
+  
+  ![w3c-validator warning/errors](assets/images/w3c-validator-error-game.html.png)
+   
    Willing to accept the empty heading warning as this heading will be populated as part of the getNewQuestion() Function. I fixed the error by removing obsolete id's.
    Game.html now showing 1 warning. As pointed out above, willing to accept this warning. [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fpauldwyer.github.io%2Fquiz-game-pp2%2Fgame.html)
   - End.html showing 1 warning. Willing to accept this warning as the blank space is populated by the end.js file. [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fpauldwyer.github.io%2Fquiz-game-pp2%2Fend.html)
