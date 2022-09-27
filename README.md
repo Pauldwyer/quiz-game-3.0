@@ -151,16 +151,36 @@ List of devices that the website was tested on for responsiveness through chrome
 ### Lighthouse Testing
 
 - Home page mobile
+
 ![Home Page](assets/images/lighthouse-homepage.png)
 
 - Game page mobile
+
 ![Game Page](assets/images/lighthouse-gamepage-mobile.png)
 
 - End page mobile
+
 ![End Game](assets/images/lighthouse-endpage.png)
 
 - Highscore page mobile
+
 ![Highscore](assets/images/lighthouse-highscorespage.png)
+
+- Home page desktop
+
+![Home Page](assets/images/lighthouse-homepage-desktop.png)
+
+- Game page desktop
+
+![Game Page](assets/images/lighthouse-gamepage-desktop.png)
+
+- End page desktop
+
+![End Game](assets/images/lighthouse-endpage-desktop.png)
+
+- Highscores page desktop
+
+![Highscore](assets/images/lighthouse-highscores-desktop.png)
 
 
 
