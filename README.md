@@ -87,10 +87,31 @@ In this section, I will show and discuss all the features of the site.
 
 ## Testing 
 
+Throughout development of the project, code was regularly tested using Chrome developer tools, manual testing was performed and code was passed through validators like W3C for HTML, Jigsaw for CSS and Jshint for JS.
+
+List of devices that the website was tested on for responsiveness through chrome developer tools:
+
+- iPhone SE
+- iPhone XR
+- iPhone 12 Pro
+- Pixel 5
+- Samsung Galaxy S8
+- Samsung Galaxy S20 Ultra
+- Samsung Galaxy A51/71
+- Samsung Galaxy A52/A53 5g
 
 ### Manual Testing
 
+- The site was tested manually on google chrome desktop.
+- Goal of the testing was to check if the functionality of each button across all pages. If they were working as intended and eliciting the correct response ie. increment scrore for each correct answer, change colour for correct and incorrect answer.
+- See below steps, expected results and results.
 
+![Desktop Chrome manual Testing](assets/images/desktop-manual-testing.png)
+
+- Manual testing was also performed on google chrome for android mobile.
+- See below steps, expected results and results.
+
+![Android Chrome Testing](assets/images/android-chrome-testing.png)
 
 
 ### Validator Testing 
@@ -141,9 +162,11 @@ The live link can be found here - https://pauldwyer.github.io/quiz-game-pp2/
 
 ## Credits 
 
-[w3schools](https://www.w3schools.com/html/default.asp)
+[w3schools](https://www.w3schools.com/js/default.asp)
 
-[Flexbox Frogy](https://flexboxfroggy.com/) This game thought me how to use flexbox.
+[Scrimba](https://scrimba.com/allcourses?topic=javascript)
+
+[Flexbox Frogy](https://flexboxfroggy.com/)
 
 ### Content 
 
