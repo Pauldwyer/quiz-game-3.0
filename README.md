@@ -115,6 +115,7 @@ List of devices that the website was tested on for responsiveness through chrome
 
 
 ### Validator Testing 
+
 - HTML
   - Index.html no errors were returned when passing through the official [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fpauldwyer.github.io%2Fquiz-game-pp2%2F)
 
@@ -146,6 +147,21 @@ List of devices that the website was tested on for responsiveness through chrome
   - Accepting these warnings. One unused variable sets the max number of high scores to five. One undefined variable adds the score to an array, sorts the array and splices out the lowest and keeps the array at a length of five. No errors were shown.
 
     ![End.js shint warnings](assets/images/end.js-jshint-warnings.png)
+
+### Lighthouse Testing
+
+- Home page mobile
+![Home Page](assets/images/lighthouse-homepage.png)
+
+- Game page mobile
+![Game Page](assets/images/lighthouse-gamepage-mobile.png)
+
+- End page mobile
+![End Game](assets/images/lighthouse-endpage.png)
+
+- Highscore page mobile
+![Highscore](assets/images/lighthouse-highscorespage.png)
+
 
 
 ### Unfixed Bugs
