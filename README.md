@@ -16,6 +16,20 @@ Required technologies: HTML, CSS, JavaScript.
 
 ### User Stories
 
+### Design
+
+- Colours
+  - For the colours for this site I took inspiration from Cyberpunk themes and Synthwave themes. I really like that aestheic and since Stranger Things is set in the 80s i feel like these were a perfect match.
+  I used the following 2 palletes for most of the colours on the site.
+  ![Colour Pallete](assets/images/coloors2.png)
+  ![Colour Pallete](assets/images/coloors3.1.png)
+
+  - For the background colour a gradient was made from the following 3 colours. Gradient generated with [CSS Gradient.io](https://cssgradient.io/)
+  ![Gradient Colours](assets/images/gradient-colours.png)
+
+
+- Font
+  - For the font I used VT323, I was searching google looking for 80s style fonts and I found this GitHub page [Fonts Inspiration](https://github.com/torch2424/aesthetic-css). This page had a list of google fonts that work well with the theme and aesthic i was going for.
 
 
 ## Features 
@@ -46,7 +60,7 @@ In this section, I will show and discuss all the features of the site.
 - End page is displayed when all four questions have been answered. This page has a total score at the top, four buttons and a footer.
   - Total score at the top of the screen shows what score the user received.
   - The username button allows the user to input a username to show on the high scores list
-  - Save button is only available when the user has inputted a username. This allows the user the save their username on the high score list.
+  - Save button is only available when the user has inputted a username. This allows the user the save their username on the high score list. Once save is clicked the user is brought to the High-Scores page.
   - Play again button allows the user to play the game again.
   - Go home button allows the user to return to the home page.
 
@@ -61,9 +75,13 @@ In this section, I will show and discuss all the features of the site.
 
 - Add more questions / have the quiz take questions from an api.
 
-- Add sounds / play some synthwave music in the background.
+- Play some sythnwave music in the background when the quiz starts.
 
 - Add supporting images.
+
+- Possibly change the way the answers are submitted and add a submit button.
+
+- Add a count down timer for each question.
 
 ## Technology Used
 
@@ -106,12 +124,12 @@ List of devices that the website was tested on for responsiveness through chrome
 - Goal of the testing was to check if the functionality of each button across all pages. If they were working as intended and eliciting the correct response ie. increment scrore for each correct answer, change colour for correct and incorrect answer.
 - See below steps, expected results and results.
 
-![Desktop Chrome manual Testing](assets/images/desktop-manual-testing.png)
+![Desktop Chrome manual Testing](assets/images/updated-manual-testing.png)
 
 - Manual testing was also performed on google chrome for android mobile.
 - See below steps, expected results and results.
 
-![Android Chrome Testing](assets/images/android-chrome-testing.png)
+![Android Chrome Testing](assets/images/updated-manual-testing-mobile.png)
 
 
 ### Validator Testing 
@@ -182,9 +200,15 @@ List of devices that the website was tested on for responsiveness through chrome
 
 ![Highscore](assets/images/lighthouse-highscores-desktop.png)
 
+### Bugs
 
+- First bug i encountered during development was incorrect file paths when the site was deployed to GitHug Pages.
+  I was using the incorrect file paths, which worked correctly when using a live 8000 server from GitPod but once the site was deployed all links were broken. Play worked on the home page and the buttons to answer questions were the only buttons that worked correctly.
+  To fix this issue i used the relative file path for all page links.
 
-### Unfixed Bugs
+- Second bug i encountered was when the site was live when using chrome developer tools there was console errors when on the home page, end page and high scores page. See below screenshot of the error.
+To fix this error i removed the script.js from the those 3 pages. This fixed the console error.    
+![Console Error](assets/images/Home-page-bug.png)
 
 ## Deployment
 
@@ -198,23 +222,31 @@ The live link can be found here - https://pauldwyer.github.io/quiz-game-pp2/
 
 ## Credits 
 
-[w3schools](https://www.w3schools.com/js/default.asp)
+[w3schools](https://www.w3schools.com/js/default.asp) - Helped me understand JavaScript more.
 
-[Scrimba](https://scrimba.com/allcourses?topic=javascript)
+[Scrimba](https://scrimba.com/allcourses?topic=javascript) - I did the learn JavaScript for free course when i finished the JavaScript essentials module. It really helped me understand JS more.
 
-[Flexbox Frogy](https://flexboxfroggy.com/)
+[Fonts Inspiration](https://github.com/torch2424/aesthetic-css) - Found this page when looking for fonts.
 
-[Fonts Inspiration](https://github.com/torch2424/aesthetic-css)
+[Web Dev Simplified Youtube](https://www.youtube.com/watch?v=riDzcEQbX6k&t=458s) - This tutorial helped me alot with understanding how to write a quiz.
 
-[Web Dev Simplified Youtube](https://www.youtube.com/watch?v=riDzcEQbX6k&t=458s)
+[Brian Design Youtube](https://www.youtube.com/watch?v=f4fB9Xg2JEY&t=2614s) - Alot of inspiration for code taken from this tutorial.
 
-[Brian Design Youtube](https://www.youtube.com/watch?v=f4fB9Xg2JEY&t=2614s)
+[James Q Quick](https://www.youtube.com/watch?v=rFWbAj40JrQ&list=PLB6wlEeCDJ5Yyh6P2N6Q_9JijB6v4UejF) - Alot of inspiration for code taken from this tutorial.
 
-[James Q Quick](https://www.youtube.com/watch?v=rFWbAj40JrQ&list=PLB6wlEeCDJ5Yyh6P2N6Q_9JijB6v4UejF)
+[CodingNepal](https://www.youtube.com/watch?v=WUBhpSRS_fk) - A tutorial that helped me understand making a quiz game.
 
-[Stackoverflow](https://stackoverflow.com/)
+[Stackoverflow](https://stackoverflow.com/) - Helped alot when trouble shooting errors.
 
-### Content 
+[Coolors.co](https://coolors.co/) - Used to generate colour palletes.
+
+[CSS Gradient.io](https://cssgradient.io/) - Used to generate gradient for background colour.
 
 
 ### Media
+
+No external media was used for this site.
+
+## Closing Thoughts
+
+

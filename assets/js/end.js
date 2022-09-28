@@ -14,6 +14,7 @@ username.addEventListener('keyup', () => {
     saveScoreBtn.disabled = !username.value;
 });
 
+//save highscore function
 saveHighScore = e => {
     e.preventDefault();
 
@@ -31,5 +32,5 @@ saveHighScore = e => {
     //updates local storage with highscores an stringifys the highscore
     localStorage.setItem('highScores', JSON.stringify(highScores));
     //goes back home
-    window.location.assign("index.html");
+    window.location.assign("highscores.html");
 };
