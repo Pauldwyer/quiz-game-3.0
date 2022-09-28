@@ -6,6 +6,8 @@ It is meant as a bit of light-hearted fun and to test people on their Stranger T
 
 There is a high scores leader board so users can compare their high scores.
 
+![Am I Responsive](assets/images/am-i-responsive.png)
+
 
 ## UX 
 
