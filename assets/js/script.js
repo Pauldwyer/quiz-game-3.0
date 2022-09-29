@@ -17,7 +17,7 @@ let availableQuestions = [];
 
 /**
  * Declares the 4 questions in an array.
- */ 
+ */
 let questions = [{
         question: 'What movie theme song does Dustin sing to Suzie at the end of season 3?',
         choice1: 'Never-ending story',
@@ -103,7 +103,7 @@ getNewQuestion = () => {
 
 /**
  * Gives a delay, allows selecting answer and gets a new question
- */ 
+ */
 choices.forEach(choice => {
     choice.addEventListener('click', e => {
         if (!acceptingAnswers) return;
