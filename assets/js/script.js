@@ -81,7 +81,7 @@ getNewQuestion = () => {
         return window.location.assign("end.html");
     };
 
-    //populates the hud with a question counter
+    //populates the hud with a question counter 1/4, 2/4, etc.
     questionCounter++;
     questionCounterText.innerText = `${questionCounter}/${MAX_QUESTIONS}`;
 
