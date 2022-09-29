@@ -1,16 +1,23 @@
+/**
+ * Declaring constants for dom elements
+ */
 const question = document.getElementById('question');
 const choices = Array.from(document.getElementsByClassName("choice-text"));
 const questionCounterText = document.getElementById('question-counter');
 const scoreText = document.getElementById('score');
 
-// declaring variables
+/**
+ * Declaring variables
+ */
 let currentQuestion = {};
 let acceptingAnswers = false;
 let score = 0;
 let questionCounter = 0;
 let availableQuestions = [];
 
-// declares 4 questions in an array
+/**
+ * Declares the 4 questions in an array.
+ */ 
 let questions = [{
         question: 'What movie theme song does Dustin sing to Suzie at the end of season 3?',
         choice1: 'Never-ending story',
@@ -32,11 +39,11 @@ let questions = [{
         choice1: 'Eleven',
         choice2: 'Robin',
         choice3: 'Max',
-        choice4: 'Steve Harringtn',
+        choice4: 'Steve Harrington',
         answer: 1,
     },
     {
-        question: 'What is the name of the ice cream parlor where Steve and Robin work in season 3?',
+        question: 'What is the name of the ice cream parlour where Steve and Robin work in season 3?',
         choice1: 'the Hawthorne Grille',
         choice2: 'Lickity Splits',
         choice3: 'The Rovers Return',
@@ -49,7 +56,11 @@ let questions = [{
 const CORRECT_BONUS = 10;
 const MAX_QUESTIONS = 4;
 
-//start game funciton
+/**
+ * start game function for starting the game
+ * sets question counter and score to 0 
+ * calls new question function
+ */
 startGame = () => {
     questionCounter = 0;
     score = 0;
@@ -57,16 +68,20 @@ startGame = () => {
     getNewQuestion();
 };
 
-// get new question function
+/**
+ * getNewQuestion is the main function.
+ * Gets the questions, populates hud, and iterates through questions and answers.
+ * Credit to James Q Quick youtube
+ */
 getNewQuestion = () => {
 
     if (availableQuestions.length === 0 || questionCounter > MAX_QUESTIONS) {
         localStorage.setItem('mostRecentScore', score);
-        //go to end page if no questions left
+        //go to the end page if no questions are left
         return window.location.assign("end.html");
     };
 
-    //populates the hud with a question couter
+    //populates the hud with a question counter
     questionCounter++;
     questionCounterText.innerText = `${questionCounter}/${MAX_QUESTIONS}`;
 
@@ -86,7 +101,9 @@ getNewQuestion = () => {
     acceptingAnswers = true;
 };
 
-//gives a delay, allows selecting answer and gets new question
+/**
+ * Gives a delay, allows selecting answer and gets a new question
+ */ 
 choices.forEach(choice => {
     choice.addEventListener('click', e => {
         if (!acceptingAnswers) return;
@@ -104,7 +121,7 @@ choices.forEach(choice => {
 
         selectedChoice.parentElement.classList.add(classToApply);
 
-        //removes the highlight after 1000ms or 1second, gets new question
+        //removes the highlight after 1000ms or 1second, and calls getNewQuestion function
         setTimeout(() => {
             selectedChoice.parentElement.classList.remove(classToApply);
             getNewQuestion();
@@ -119,5 +136,5 @@ incrementScore = num => {
     scoreText.innerText = score;
 };
 
-//calls the start game funciton
+//calls the start game function
 startGame();

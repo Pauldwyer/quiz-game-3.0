@@ -1,3 +1,6 @@
+/**
+ * Declaring constants
+ */
 const username = document.getElementById('username');
 const saveScoreBtn = document.getElementById('saveScoreBtn');
 const finalScore = document.getElementById("finalScore");
@@ -14,7 +17,10 @@ username.addEventListener('keyup', () => {
     saveScoreBtn.disabled = !username.value;
 });
 
-//save highscore function
+/**
+ * Save high score function creates the high scores list
+ * Credit to James Q Quick youtube
+ */
 saveHighScore = e => {
     e.preventDefault();
 

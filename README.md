@@ -6,9 +6,9 @@ It is meant as a bit of light-hearted fun and to test people on their Stranger T
 
 There is a high scores leaderboard so users can compare their high scores.
 
-![Am I Responsive](assets/images/am-i-responsive.png)
-
 The live link can be found here - https://pauldwyer.github.io/quiz-game-pp2/
+
+![Am I Responsive](assets/images/am-i-responsive.png)
 
 
 ## UX 
@@ -295,6 +295,8 @@ To fix this error I removed the script.js from those 3 pages. This fixed the con
 [CSS Gradient.io](https://cssgradient.io/) - Used to generate gradient for background colour.
 
 [Favicon.io](https://favicon.io/) - Was used to generate a favicon for the site.
+
+[Flexbox Frogy](https://flexboxfroggy.com/) this game thought me how to use flex box.
 
 
 ### Media
