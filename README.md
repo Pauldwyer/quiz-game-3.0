@@ -305,9 +305,11 @@ No external media was used for this site.
 
 # Closing Thoughts
 
-I came out of the JavaScript Essentials module scratching my head a little bit. The coursework didn't stick with me. 
-I had a meeting with my mentor before starting work on the project and he reassured me that I generally wasn't the only one feeling like this when finishing the module. 
-He pointed me towards scrimba and doing that free course helped me understand JS a lot better. 
-I ended up doing 4 different quiz tutorials before actually starting the project and you can see the influences present in the finished project.
+I came out of the JavaScript Essentials module scratching my head a little bit.
+I had a meeting with my mentor before starting work on the project and he reassured me that I generally wasn't the only one feeling like this when finishing the module.
+He pointed me towards scrimba and doing that free course really helped me understand JS a lot better. 
+
+I did 4 different quiz tutorials before actually starting the project to see what kind of logic and functions are required. You can see the influences present in the finished project.
+
 As with my first project, I feel I have learned a huge amount about JavaScript and web development from coding this project.
 
